@@ -1,0 +1,23 @@
+STEP-1: LAUNCH AN INSTANCE WITH T2.LARGE 
+STEP-2: INSTALL JENKINS, GIT, DOCKER & TRIVY
+STEP-3: INSTALL THE FOLLOWING JENKINS PLUGINS
+ SONAR SCANNER
+ NODEJS
+ OWASP DEPENDENCY CHECK
+ DOCKER PIPELINE
+ Eclipse Temurin installerVersion
+STEP-4: CONFIGURE ALL THE PLUGINS INTO JENKINS
+
+SETUP SONAR USING DOCKER
+============================
+docker run -d --name sonar -p 9000:9000 sonarqube:lts-community
+--> After creating the sonar container, access the sonarqube with 9000 port number. 
+--> Login to the sonar dashboard with the following and credentials
+ username: admin
+ password: admin
+
+--> CONFIGURE ALL THE PLUGINS INTO JENKINS
+
+--> Now configure NodeJs, Java & DP-Check
+
+--> START WRITING DECLARATIVE PIPELINE
