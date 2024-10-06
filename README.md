@@ -1,6 +1,6 @@
-Project Update: Integrating DevOps Tools for Enhanced Security and CI/CD 
+__Project Update: Integrating DevOps Tools for Enhanced Security and CI/CD__ 
 
-🔧 Tools Used:
+__Tools Used__
 
 GitHub: For version control and code repository.
 
@@ -14,7 +14,7 @@ SonarQube: For static code analysis to ensure code quality.
 
 OWASP: For checking the dependencies installation
 
-💠 Plugins I Used:
+__Plugins I Used__
 
 SONAR SCANNER 
 
@@ -26,7 +26,7 @@ DOCKER PIPELINE
 
 Eclipse Temurin installerVersion 
 
-💠 Process
+__Process__
 
 ◾ Connected Jenkins to the GitHub repository for automated builds on code changes.
 
