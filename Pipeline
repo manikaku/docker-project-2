@@ -70,10 +70,27 @@ pipeline {
                 sh 'trivy image imagename:mydockerimage'
             }
         }
-        stage ("Deploy") {
+    }
+}
+
+
+
+DEPLOYMENT:
+
+pipeline {
+    agent any
+
+    stages {
+        stage('check') {
             steps {
-                sh 'docker run -d --name zomato -p 3000:3000 imagename:mydockerimage'
+                git 'https://github.com/RAHAMSHAIK007/dockernewproject.git'
+            }
+        }
+        stage('stack') {
+            steps {
+                sh 'docker stack deploy -c docker-compose.yml courses'
             }
         }
     }
 }
+
