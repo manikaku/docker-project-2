@@ -83,12 +83,12 @@ pipeline {
     stages {
         stage('check') {
             steps {
-                git 'https://github.com/RAHAMSHAIK007/dockernewproject.git'
+                git 'https://github.com/devops0014/Zomato-Repo.git'
             }
         }
         stage('stack') {
             steps {
-                sh 'docker stack deploy -c docker-compose.yml courses'
+                sh 'docker stack deploy -c docker-compose.yml zomato'
             }
         }
     }
